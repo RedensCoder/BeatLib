@@ -1,0 +1,138 @@
+.wrapper {
+    text-align: center;
+    font-family: 'Russo One';
+    display: flex;
+    flex-direction: column;
+}
+
+p.header {
+    color: #FFF;
+    font-size: 72px;
+    margin: 20px 0;
+}
+
+.wrapper__image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.form__image {
+    display: flex;
+    justify-content: center;
+}
+
+.form__file {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    vertical-align: middle;
+}
+
+.file__button {
+    background: #53FDA9;
+    border-radius: 10px;
+    font-size: 36px;
+    color: #19152B;
+    padding: 10px 30px;
+    cursor: pointer;
+    margin-left: 54px;
+}
+
+.form__form {
+    display: inline-flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 67px;
+}
+
+.form__form label {
+    text-align: start;
+    font-size: 36px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.form__form input {
+    background: #996DFF;
+    border-radius: 6px;
+    font-family: 'Russo One';
+    font-size: 24px;
+    padding: 15px 10px;
+    margin-bottom: 26px;
+}
+
+.form__form input::-webkit-input-placeholder {
+    color: #30016D;
+}
+
+.form__form input::-moz-placeholder {
+    color: #30016D;
+}
+
+.form__form input:-ms-input-placeholder {
+    color: #30016D;
+}
+
+.form__form button {
+    background: #53FDA9;
+    border-radius: 6px;
+    font-family: 'Russo One';
+    font-size: 24px;
+    color: #19152B;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+p.error {
+    font-size: 25px;
+    color: #53FDA9;
+    text-align: start;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* ============ ADAPTIVE ============== */
+
+@media(max-width: 768px) {}
+
+@media(max-width: 425px) {
+    p.header {
+        font-size: 45px;
+    }
+
+    .form__image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .file__button {
+        font-size: 24px;
+        margin-left: 0;
+    }
+
+    .form__file {
+        margin-top: 15px;
+        height: 100%;
+    }
+
+    .wrapper__image img {
+        margin: 0 auto;
+    }
+
+    .form__form {
+        width: 100%;
+    }
+
+    .form__form label {
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .file__button {
+        font-size: 20px;
+    }
+}

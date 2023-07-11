@@ -1,0 +1,268 @@
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.wrapper__accountpanel {
+    background: #53FDA9;
+    border-radius: 20px;
+    font-family: 'Russo One';
+    color: #19152B;
+    text-align: center;
+    padding: 40px 55px;
+    margin-bottom: 25px;
+}
+
+.wrapper__accountpanel img {
+    width: 195px;
+    height: 195px;
+    border-radius: 100px;
+}
+
+.wrapper__accountpanel h6 {
+    font-family: 'Russo One';
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.wrapper__accountpanel button {
+    background: #19152B;
+    border-radius: 10px;
+    font-family: 'Russo One';
+    font-size: 20px;
+    color: #FFF;
+    padding: 14px 54px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.wrapper__accountpanel p {
+    text-align: center;
+}
+
+p.headerline {
+    font-weight: 900;
+    font-size: 24px;
+    margin: 43px 0 7px 0;
+}
+
+p.subtitle {
+    font-size: 20px;
+}
+
+#quit {
+    margin-top: 45px;
+}
+
+.level_bar {
+    width: 100%;
+    height: 33px;
+    background: white;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.level_info {
+    font-size: 20px;
+    font-family: "Russo One";
+    text-align: start;
+    padding: 5px;
+    width: 150px;
+}
+
+.level_progres {
+    background: #996DFF;
+    height: 33px;
+    border-radius: 15px;
+}
+
+.accountpanel__buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.play_but {
+    color: white;
+    font-size: 70px;
+    position: relative;
+    top: 160px;
+    left: 95px;
+    cursor: pointer;
+}
+
+.play_but_pause {
+    color: white;
+    font-size: 70px;
+    position: relative;
+    top: 160px;
+    left: 95px;
+    cursor: pointer;
+}
+
+.play_but:hover {
+    visibility: visible;
+}
+
+/* ================= BEATS =================== */
+
+.wrapper__beats {
+    font-family: 'Russo One';
+    margin-left: 22px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.beats__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.beats__header p {
+    color: #FFF;
+    font-size: 64px;
+}
+
+.beats__header button {
+    background: #53FDA9;
+    border-radius: 10px;
+    font-family: 'Russo One';
+    font-size: 24px;
+    color: #19152B;
+    padding: 15px 35px;
+    cursor: pointer;
+}
+
+.beats__blocks {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+    /*text-align: center;*/
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 46px;
+}
+
+.beats_beat {
+    margin-bottom: 30px;
+}
+
+.beats__img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.beats__info {
+    text-align: center;
+}
+
+.block__price {
+    font-size: 20px;
+    text-align: center;
+}
+
+.block__flex {
+    display: flex;
+    justify-content: center;
+}
+
+p.price {
+    color: #53FDA9;
+}
+
+.block__flex p {
+    color: white;
+    font-size: 20px;
+    font-family: "Russo One";
+    padding-right: 5px;
+}
+
+p.price {
+    color: #53FDA9;
+}
+
+p.bpm {
+    color: #F953FD;
+}
+
+p.beat_name {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+/* ============= ADAPTIVE ============== */
+@media(max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        display: block;
+    }
+
+    .wrapper__beats {
+        width: 100%;
+    }
+
+    .wrapper__accountpanel {
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .beats__header p {
+        font-size: 45px;
+    }
+
+    .beats__blocks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    .accountpanel__buttons {
+        width: 60%;
+    }
+
+    .level_bar {
+        width: 60%;
+    }
+}
+
+@media(max-width: 425px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .wrapper__accountpanel {
+        border-radius: 0;
+    }
+
+    .wrapper__beats {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .beats__header p {
+        font-size: 35px;
+    }
+
+    .beats__blocks {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 15px;
+    }
+
+    .accountpanel__buttons {
+        width: 60%;
+    }
+}
+
+@media(max-width: 375px) {
+    .wrapper__accountpanel button {
+        font-size: 15px;
+    }
+}

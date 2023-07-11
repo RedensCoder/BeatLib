@@ -1,0 +1,61 @@
+.player {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: #19152B;
+    color: white;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+}
+
+.player__active {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: #19152B;
+    color: white;
+    display: flex;
+    align-items: center;
+    visibility: visible;
+}
+
+.player__img {
+    margin: 22px 0 22px 75px;
+    border-radius: 5px;
+}
+
+.player__controls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    align-items: center;
+}
+
+.controls__button {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.player__progressbar {
+    width: 75%;
+    background: #FFFFFF;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.progressbar__progress {
+    width: 0;
+    background: #57FFAF;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.close {
+    font-size: 50px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}

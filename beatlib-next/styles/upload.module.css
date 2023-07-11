@@ -1,0 +1,218 @@
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.wrapper__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex__image {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.flex__image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.flex__image input {
+    visibility: hidden;
+}
+
+.file__name {
+    display: flex;
+    flex-direction: column;
+}
+
+.file__name p {
+    margin-right: 20px;
+}
+
+.file__price {
+    display: flex;
+    flex-direction: column;
+}
+
+.file__price input {
+    visibility: hidden;
+}
+
+.wrapper__file {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper__form label {
+    font-family: "Russo One";
+    font-size: 26px;
+    color: #19152B;
+    margin-bottom: 15px;
+}
+
+label.label__label {
+    color: #FFF;
+}
+
+.wrapper__form input {
+    background: #996DFF;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Russo One";
+    padding: 12px 20px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.wrapper__form input::-webkit-input-placeholder {
+    color: #30016D;
+}
+
+.wrapper__form input::-moz-placeholder {
+    color: #30016D;
+}
+
+.wrapper__form input:-ms-input-placeholder {
+    color: #30016D;
+}
+
+.flex__image label {
+    background: #53FDA9;
+    border-radius: 10px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.file__price label {
+    background: #53FDA9;
+    border-radius: 10px;
+    padding: 10px 25px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: -45px;
+}
+
+.price__price {
+    display: flex;
+}
+
+.file__name label,
+.file__name p {
+    font-family: "Russo One";
+    font-size: 35px;
+    color: #FFF;
+    margin-left: 10px;
+}
+
+.file__name__flex {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper__form button {
+    background: #53FDA9;
+    border-radius: 10px;
+    font-family: "Russo One";
+    font-size: 30px;
+    color: #19152B;
+    padding: 10px 100px;
+    cursor: pointer;
+}
+
+/* ========= ADAPTIVE ========== */
+
+@media (max-width: 1200px) {
+
+    .file__name label,
+    .file__name p {
+        font-size: 25px;
+    }
+
+    .file__price label {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrapper__file {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .file__name__flex {
+        display: block;
+    }
+
+    .file__price {
+        text-align: center;
+        display: block;
+    }
+
+    .file__price input {
+        font-size: 5px;
+        margin-bottom: 0;
+    }
+
+    .wrapper__form button {
+        margin-top: 35px;
+        text-align: center;
+    }
+
+    .flex__image img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper__flex {
+        display: block;
+    }
+}
+
+@media (max-width: 425px) {
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wrapper__flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wrapper__form input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .file__price label {
+        font-size: 20px;
+    }
+
+    .flex__image label {
+        font-size: 20px;
+    }
+
+    .wrapper__form button {
+        font-size: 25px;
+        padding: 5px 30px;
+    }
+}

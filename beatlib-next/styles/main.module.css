@@ -1,0 +1,77 @@
+.wrapper {
+    display: flex;
+}
+
+.wrapper__stats {
+    margin: 40px 0;
+}
+
+.wrapper__stats p {
+    font-family: 'Russo One';
+    font-size: 72px;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.stats__stats {
+    background: #53FDA9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.stats__stats p {
+    font-size: 40px;
+    color: #19152B;
+    margin: 30px 40px;
+    display: flex;
+}
+
+.stats__stats svg {
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+/* ========== ADAPTIVE ============ */
+@media(max-width: 768px) {
+    .wrapper {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .stats__stats {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media(max-width: 425px) {
+    .wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper__stats p {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .stats__stats p {
+        font-size: 20px;
+        margin: 10px 15px;
+    }
+
+    .stats__stats svg {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 348px) {
+    .stats__stats p {
+        font-size: 15px;
+    }
+}

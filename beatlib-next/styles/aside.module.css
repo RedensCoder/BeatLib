@@ -1,0 +1,73 @@
+.aside {
+    text-align: center;
+    display: inline-flex;
+    background: #57FFAF;
+    border-radius: 50px;
+    margin: 40px 38px;
+    max-height: 410px;
+    min-width: 380px;
+}
+
+.navbar {
+    text-align: start;
+    margin: 30px 0;
+    padding: 0 30px;
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar li {
+    padding: 10px;
+    display: flex;
+}
+
+.navbar a {
+    color: #19152B;
+    font-family: 'Russo One';
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.navbar svg {
+    font-size: 30px;
+    color: #19152B;
+}
+
+.navbar a:hover {
+    opacity: 75%;
+}
+
+/* ============= ADAPTIVE =============== */
+
+@media(max-width: 425px) {
+
+    .aside {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        margin: 0;
+        border-radius: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .navbar {
+        margin: 0;
+        width: 100%;
+    }
+
+    .navbar svg {
+        font-size: 25px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}

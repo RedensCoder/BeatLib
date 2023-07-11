@@ -1,0 +1,90 @@
+.main_flex {
+    display: flex;
+}
+
+.main__follow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.following {
+    max-width: 986px;
+}
+
+.following__following {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 43px;
+    grid-row-gap: 48px;
+}
+
+.label {
+    font-family: "Russo One";
+    font-size: 96px;
+    color: white;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.follow {
+    max-width: 300px;
+}
+
+.follow img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.follow__username {
+    font-family: "Russo One";
+    font-size: 36px;
+    color: white;
+}
+
+.follow_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow_lvl {
+    background: #F953FD;
+    border-radius: 15px;
+}
+
+.follow_lvl p {
+    color: white;
+    font-size: 24px;
+    font-family: "Russo One";
+    text-align: center;
+    padding: 3px 40px;
+}
+
+/* ======= ADAPTIVE ======= */
+@media(max-width: 970px) {
+    .following__following {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 768px) {
+    .main_flex {
+        display: block;
+        text-align: center;
+    }
+}
+@media(max-width: 425px) {
+    .label {
+        font-size: 32px;
+    }
+
+    .following__following {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

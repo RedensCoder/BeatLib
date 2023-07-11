@@ -1,0 +1,142 @@
+.wrapper {
+    text-align: center;
+}
+
+.wrapper h1 {
+    font-size: 60px;
+    font-family: 'Fredoka One';
+    color: #53FDA9;
+    margin: 30px 0;
+}
+
+.wrapper h1 span {
+    color: #FFF;
+}
+
+.wrapper p {
+    font-family: "Russo One";
+    font-size: 60px;
+    color: #FFF;
+    margin-bottom: 60px;
+}
+
+.wrapper__form {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.wrapper__form label {
+    font-family: "Russo One";
+    font-size: 24px;
+    color: #FFF;
+    margin-bottom: 12px;
+    margin-top: 24px;
+    text-align: start;
+}
+
+.wrapper__form input {
+    background: #996DFF;
+    font-family: "Russo One";
+    font-size: 24px;
+    padding: 11px;
+    width: 644px;
+    border-radius: 6px;
+}
+
+.wrapper__form input::-webkit-input-placeholder {
+    color: #30016D;
+}
+
+.wrapper__form input::-moz-placeholder {
+    color: #30016D;
+}
+
+.wrapper__form input:-ms-input-placeholder {
+    color: #30016D;
+}
+
+.wrapper__form input:focus {
+    outline: none;
+}
+
+.wrapper__form button {
+    background: #53FDA9;
+    font-family: "Russo One";
+    font-size: 24px;
+    color: #19152B;
+    padding: 10px 50px;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+p.form__info {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    text-align: start;
+}
+
+p.form__info span {
+    color: #53FDA9;
+}
+
+p.form__message {
+    border: #53FDA9 5px solid;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.wrapper p.error {
+    font-size: 25px;
+    color: #53FDA9;
+    text-align: start;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* ======= Adaptive ======== */
+
+@media (max-width: 650px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper__form input {
+        width: auto;
+    }
+}
+
+@media (max-width: 455px) {
+    .wrapper p {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .wrapper input {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .wrapper__form label {
+        text-align: center;
+    }
+
+    .wrapper__form button {
+        margin-top: 20px;
+        padding: 10px 0;
+    }
+
+    p.form__info {
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 24px;
+        text-align: start;
+    }
+
+    p.form__message {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,109 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 30px;
+}
+
+.header__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1 {
+    font-size: 60px;
+    font-family: 'Fredoka One';
+    color: #53FDA9;
+    display: inline;
+}
+
+.header h1 span {
+    color: #FFFFFF;
+}
+
+.header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+
+.search_box {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    border-radius: 100px;
+    margin-left: 45px;
+}
+
+.search_box input {
+    font-family: "Arial";
+    font-size: 40px;
+    padding: 11px 40px;
+    background: white;
+    border-radius: 100px;
+    outline: none;
+}
+
+.search_box button {
+    color: #996DFF;
+    font-size: 40px;
+    background: white;
+    border-radius: 100px;
+    padding: 11px 40px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.basket {
+    color: #53FDA9;
+    font-size: 40px;
+    margin: 11px 25px;
+}
+
+/* ============== ADAPTIVE ================== */
+
+@media(max-width: 425px) {
+    .header {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    .header__header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search_box {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .search_box input {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .search_box button {
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .header__header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-box {
+        margin-left: 0;
+    }
+}
